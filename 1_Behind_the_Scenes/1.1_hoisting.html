@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // USO DEL HOISTING EN VARIABLES
+
+        //Ejemplo sin el uso de hoisting
+        //console.log(num1);
+
+        //Ejemplo con el uso de hoisting
+        console.log(num2);
+        var num2 = 1;
+
+        // En el primer ejemplo nos dara error ya que en la fase de creacion del VO no se encontro
+        // ninguna declaración de la variable num1.
+
+
+        // En el segundo ejemplo en cambio durante la fase de creación del VO si que se encontro la declaración
+        // de num2. Por lo tanto no dará error, si no que la pondra en undefined
+
+
+
+        // USO DE HOISTING EN FUNCIONES
+
+        //Como podemos ver, en el caso de las funciones, el Hoisting nos permite realizar la llamada en el código antes de la propia función ya que durante la 
+        // fase de creación ya se ha creado una propiedad que apunta a la función
+        saludo("pablo");
+
+        function saludo(nombre){
+            console.log("Hola " + nombre.charAt(0).toUpperCase() + nombre.slice(1) + " bienvenido a la página.");
+        }
+        
+    </script>
+    
+</body>
+</html>
