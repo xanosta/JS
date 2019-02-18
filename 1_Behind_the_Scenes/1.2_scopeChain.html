@@ -19,9 +19,15 @@
             return num + numero2;
         }
 
-        var resultado = makeAdd(5);
+        var resultado = makeAdd(numero1);
 
         console.log(resultado);
+        document.write("Pruebas scope chain");
+        document.write("<br>");
+        document.write("Pruebas efectuadas por consola");
+
+        //Como podemos ver, la funcion makeAdd puede acceder a la variable numero1 a traves del scope chain el cual permite acceder 
+        //a las variables de contextos de ejecución exteriores. Sin embargo el contexto global no podria acceder a la variable numero2
     
     </script>
     

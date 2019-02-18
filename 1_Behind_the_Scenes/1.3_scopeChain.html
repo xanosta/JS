@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+    
+        var a = "prueba1";
+        first();
+
+        function first() {
+            var b = "prueba2";
+            second();
+
+            function second() {
+                var c = "prueba3";
+                third();
+            }
+        }
+
+        function third() {
+            var d = "Pablo";
+            console.log(d);
+        }
+
+        // Pruebas de scope chain
+        
+        //     -contexto global: puede acceder a a
+        //     -contexto first(): a y b
+        //     -contexto second(): a, b y c
+        //     -contexto third(): a y d
+        
+    </script>
+    
+</body>
+</html>
