@@ -1,13 +1,8 @@
 
-var resultado = document.getElementById('player-0-panel').target.value;
 
-document.getElementById('player-0-panel').apply(){
-
-    if(!resultado || resultado <= 0){
-
-        document.getElementById('display-settings').innerHTML = 'El resultado es invalido, por favor reinicia el juego';
-    }
-}
+var puntuacionTotal, dado, currentScore;
 
 
-console.log(resultado);
+var puntuacionTotal = document.getElementById('player-score').value;
+var dado = document.getElementById('player-score').value;
+var currentScore = document.getElementById('player-score').value;
