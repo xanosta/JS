@@ -12,6 +12,8 @@ Later on we will add some extra rules in order to make the game more interesting
 */
 
 var currentScore = 0;
+var totalScore = [0, 0];
+var activePlayer = 1;
 
 document.getElementById('btn-dice').addEventListener("click", function(){
 
@@ -25,6 +27,6 @@ document.getElementById('btn-dice').addEventListener("click", function(){
         currentScore = currentScore + diceResult;
     }
 
-    document.getElementById('current-0').textContent = currentScore;   
+    document.getElementById('current-' + activePlayer).textContent = currentScore;   
 });
 
